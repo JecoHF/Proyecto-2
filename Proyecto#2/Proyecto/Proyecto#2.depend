@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1514140574 source:g:\una\progra i\proyecto#2\main.cpp
+	<iostream>
+
+1539746089 source:g:\una\progra i\proyecto#2\src\estudiante.cpp
+	"Estudiante.h"
+
+1539745463 g:\una\progra i\proyecto#2\include\estudiante.h
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1539747094 source:g:\una\progra i\proyecto#2\src\libro.cpp
+	"Libro.h"
+
+1539746487 g:\una\progra i\proyecto#2\include\libro.h
+	<iostream>
+	<sstream>
+	<windows.h>
+
