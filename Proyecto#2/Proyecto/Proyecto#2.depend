@@ -1,20 +1,46 @@
 # depslib dependency file v1.0
-1514140574 source:g:\una\progra i\proyecto#2\main.cpp
-	<iostream>
+1539840561 source:c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\main.cpp
+	"Interfaz.h"
 
-1539746089 source:g:\una\progra i\proyecto#2\src\estudiante.cpp
+1539748588 source:c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\src\autor.cpp
+	"Autor.h"
+
+1539748583 c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\include\autor.h
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1539746089 source:c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\src\estudiante.cpp
 	"Estudiante.h"
 
-1539745463 g:\una\progra i\proyecto#2\include\estudiante.h
+1539745463 c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\include\estudiante.h
 	<iostream>
 	<sstream>
 	<windows.h>
 
-1539747094 source:g:\una\progra i\proyecto#2\src\libro.cpp
+1539747094 source:c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\src\libro.cpp
 	"Libro.h"
 
-1539746487 g:\una\progra i\proyecto#2\include\libro.h
+1539746487 c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\include\libro.h
 	<iostream>
 	<sstream>
 	<windows.h>
+
+1539836639 source:c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\src\nodoestudiante.cpp
+	"NodoEstudiante.h"
+
+1539836639 c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\include\nodoestudiante.h
+	"Estudiante.h"
+
+1539837999 source:c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\src\listaestudiante.cpp
+	"ListaEstudiante.h"
+
+1539835807 c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\include\listaestudiante.h
+	"NodoEstudiante.h"
+
+1539840484 source:c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\src\interfaz.cpp
+	"Interfaz.h"
+
+1539840561 c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\include\interfaz.h
+	"ListaEstudiante.h"
 

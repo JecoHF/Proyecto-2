@@ -1,9 +1,12 @@
-#include <iostream>
+#include "Interfaz.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Interfaz *M=new Interfaz;
+
+    M->MenuEstudiante();
+
     return 0;
 }
