@@ -5,6 +5,21 @@ Interfaz::Interfaz()
     ListEst=new ListaEstudiante;
 }
 void Interfaz::MenuEstudiante(){
+    int opME;
+    bool auxE=1;
+
+    while(auxE==1){
+    system("cls");
+    cout<<"Digite la accion que desea realizar: "<<endl;
+    cout<<"1.Agregar un nuevo estudiante"<<endl;
+    cout<<"2.Ver la lista de todos los estudiantes"<<endl;
+    cout<<"3.Ver los datos de un estudiante"<<endl;
+    cout<<"4.Modificar los datos de un estudiante"<<endl;
+    cout<<"5.Eliminar un estudiante"<<endl;
+    cout<<"6.Volver al menu principal"<<endl;
+    cin>>opME;
+    switch(opME){
+    case 1:{
     int ope=1;
     while(ope==1){
     Estudiante *Estudi=new Estudiante;
@@ -55,6 +70,39 @@ void Interfaz::MenuEstudiante(){
     cout<<"Desea agregar otro estudiante? "<<endl;
     cout<<"1.Si 2.No ";
     cin>>ope;
+    }
+    break;
+    }
+
+    case 2:{
+        ListEst->VerTodosEstudiantes();
+        cin.get();
+        break;
+    }
+    case 3:{
+        ListEst->VerEstudiante();
+        cin.get();
+        break;
+    }
+    case 4:{
+        ListEst->ModificarEstudiante();
+        cin.get();
+        break;
+    }
+    case 5:{
+       // ListEst->EliminarEstudiante();
+        break;
+    }
+    case 6:{
+        auxE=0;
+        break;
+    }
+    default:{
+        cout<<"Opcion inexistente, por favor intentelo de nuevo";
+        cin.get();
+        break;
+    }
+    }
     }
 }
 Interfaz::~Interfaz()

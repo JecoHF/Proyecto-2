@@ -31,6 +31,7 @@ void ListaEstudiante::VerTodosEstudiantes(){
     }
     else if(temp->getSigE() == NULL){
         cout<<temp->getEst()->toStringEst();
+        cin.get();
     }
     else{
         cout<<"Lista completa de estudiantes:"<<endl;
@@ -52,8 +53,9 @@ void ListaEstudiante::VerEstudiante(){
     }
     if(temp){
     cout<<temp->getEst()->toStringEst();
+    cin.get();
     }
-    else{
+    else if(temp->getEst()->getIdEst() != idU && temp->getSigE()==NULL){
         cout<<"Estudiante inexistente"<<endl;
     }
 }
@@ -69,7 +71,8 @@ void ListaEstudiante::ModificarEstudiante(){
     }
     int op=1;
     while(op==1){
-    cout<<"Digite el numero del dato que dese modificar "<<endl;
+    system("cls");
+    cout<<"Digite el numero del dato que desea modificar "<<endl;
     cout<<"1.Id"<<endl;
     cout<<"2.Nombre"<<endl;
     cout<<"3.Edad"<<endl;
@@ -85,6 +88,9 @@ void ListaEstudiante::ModificarEstudiante(){
             cout<<"Digite el nuevo Id ";
             cin>>*idC;
             temp->getEst()->setIdEst(idC);
+            cout<<"Desea cambiar otro dato del mismo estudiante?"<<endl;
+            cout<<"1.Si 2.No ";
+            cin>>op;
             break;
         }
         case 2:{
@@ -92,6 +98,9 @@ void ListaEstudiante::ModificarEstudiante(){
             cout<<"Digite el nuevo Nombre ";
             cin>>*Nom;
             temp->getEst()->setNombre(Nom);
+            cout<<"Desea cambiar otro dato del mismo estudiante?"<<endl;
+            cout<<"1.Si 2.No ";
+            cin>>op;
             break;
         }
         case 3:{
@@ -99,6 +108,9 @@ void ListaEstudiante::ModificarEstudiante(){
             cout<<"Digite la nueva edad ";
             cin>>*Ed;
             temp->getEst()->setEdad(Ed);
+            cout<<"Desea cambiar otro dato del mismo estudiante?"<<endl;
+            cout<<"1.Si 2.No ";
+            cin>>op;
             break;
         }
         case 4:{
@@ -106,27 +118,39 @@ void ListaEstudiante::ModificarEstudiante(){
             cout<<"Digite la nueva direccion ";
             cin>>*dir;
             temp->getEst()->setDireccion(dir);
+            cout<<"Desea cambiar otro dato del mismo estudiante?"<<endl;
+            cout<<"1.Si 2.No ";
+            cin>>op;
             break;
         }
         case 5:{
             string *ema=new string();
-            cout<<"Digite el nuevo Genero ";
+            cout<<"Digite el nuevo email ";
             cin>>*ema;
             temp->getEst()->setEmail(ema);
+            cout<<"Desea cambiar otro dato del mismo estudiante?"<<endl;
+            cout<<"1.Si 2.No ";
+            cin>>op;
             break;
         }
         case 6:{
             string *Carr=new string();
-            cout<<"Digite el nuevo Genero ";
+            cout<<"Digite la nueva carrera ";
             cin>>*Carr;
             temp->getEst()->setCarrera(Carr);
+            cout<<"Desea cambiar otro dato del mismo estudiante?"<<endl;
+            cout<<"1.Si 2.No ";
+            cin>>op;
             break;
         }
         case 7:{
             float *prom=new float;
-            cout<<"Digite el nuevo Genero ";
+            cout<<"Digite el nuevo promedio ";
             cin>>*prom;
             temp->getEst()->setPromedio(prom);
+            cout<<"Desea cambiar otro dato del mismo estudiante?"<<endl;
+            cout<<"1.Si 2.No ";
+            cin>>op;
             break;
         }
         default:{
@@ -136,12 +160,11 @@ void ListaEstudiante::ModificarEstudiante(){
             break;
         }
     }
-    cout<<"Desea cambiar otro dato del mismo estudiante?"<<endl;
-    cout<<"1.Si 2.No ";
-    cin>>op;
+
     }
-    cout<<"Datos del usuario con la modificacion: "<<endl;
+    cout<<"Datos del estudiante con la modificacion: "<<endl;
     cout<<temp->getEst()->toStringEst();
+    cin.get();
 }
 ListaEstudiante::~ListaEstudiante()
 {
