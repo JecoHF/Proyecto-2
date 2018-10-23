@@ -10,13 +10,14 @@ void Interfaz::MenuEstudiante(){
 
     while(auxE==1){
     system("cls");
+    cout <<endl <<endl;
     cout<<"Digite la accion que desea realizar: "<<endl;
-    cout<<"1.Agregar un nuevo estudiante"<<endl;
-    cout<<"2.Ver la lista de todos los estudiantes"<<endl;
-    cout<<"3.Ver los datos de un estudiante"<<endl;
-    cout<<"4.Modificar los datos de un estudiante"<<endl;
-    cout<<"5.Eliminar un estudiante"<<endl;
-    cout<<"6.Volver al menu principal"<<endl;
+    cout<<"1. Agregar un nuevo estudiante"<<endl;
+    cout<<"2. Ver la lista de todos los estudiantes"<<endl;
+    cout<<"3. Ver los datos de un estudiante"<<endl;
+    cout<<"4. Modificar los datos de un estudiante"<<endl;
+    cout<<"5. Eliminar un estudiante"<<endl;
+    cout<<"6. Volver al menu principal"<<endl <<endl;
     cin>>opME;
     switch(opME){
     case 1:{
@@ -25,14 +26,15 @@ void Interfaz::MenuEstudiante(){
     Estudiante *Estudi=new Estudiante;
     string *idEn=new string();
     string *NoEn=new string();
-    int *EdEn=new int;
+    string *EdEn=new string();
     string *DirEn=new string();
     string *EmaEn=new string();
     string *Caren=new string();
-    float *ProEn=new float;
+    string *ProEn=new string();
 
 
     system("cls");
+    cout <<endl;
     cout<<"Digite el id: ";
     cin>>*idEn;
     cout<<endl;

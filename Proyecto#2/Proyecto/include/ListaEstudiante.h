@@ -2,7 +2,6 @@
 #define LISTAESTUDIANTE_H
 #include "NodoEstudiante.h"
 
-
 class ListaEstudiante
 {
     public:

@@ -13,22 +13,22 @@ class Estudiante
 
         // Métodos set:
         void setIdEst(string *IdEst);
-        void setEdad(int *edad);
+        void setEdad(string *edad);
         void setNombre(string *nombre);
         void setDireccion(string *direccion);
         void setEmail(string *email);
         void setCarrera(string *carrera);
-        void setPromedio(float *promedio);
+        void setPromedio(string *promedio);
 
         //Métodos get:
 
         string getIdEst();
-        int getEdad();
+        string getEdad();
         string getNombre();
         string getDireccion();
         string getEmail();
         string getCarrera();
-        float getPromedio();
+        string getPromedio();
 
         //Métodos adicionales:
         string toStringEst();
@@ -39,12 +39,12 @@ class Estudiante
 
     private:
         string *IdEst;
-        int *edad;
+        string *edad;
         string *nombre;
         string *direccion;
         string *email;
         string *carrera;
-        float *promedio;
+        string *promedio;
 };
 
 #endif // ESTUDIANTE_H

@@ -3,12 +3,12 @@
 Estudiante::Estudiante()
 {
    IdEst= new string();
-   edad=new int;
+   edad=new string();
    nombre=new string();
    direccion=new string();
    email=new string();
    carrera=new string();
-   promedio=new float;
+   promedio=new string();
 
 }
 
@@ -17,7 +17,7 @@ Estudiante::Estudiante()
 void Estudiante::setIdEst(string *IdEst){
     this->IdEst=IdEst;
 }
-void Estudiante::setEdad(int *Edad){
+void Estudiante::setEdad(string *Edad){
     this->edad=Edad;
 }
 void Estudiante::setNombre(string *Nombre){
@@ -32,7 +32,7 @@ void Estudiante::setEmail(string *Email){
 void Estudiante::setCarrera(string *Carrera){
     this->carrera=Carrera;
 }
-void Estudiante::setPromedio(float *promedio){
+void Estudiante::setPromedio(string *promedio){
     this->promedio=promedio;
 }
 
@@ -41,7 +41,7 @@ void Estudiante::setPromedio(float *promedio){
 string Estudiante::getIdEst(){
     return *IdEst;
 }
-int Estudiante::getEdad(){
+string Estudiante::getEdad(){
     return *edad;
 }
 string Estudiante::getNombre(){
@@ -56,7 +56,7 @@ string Estudiante::getEmail(){
 string Estudiante::getCarrera(){
     return *carrera;
 }
-float Estudiante::getPromedio(){
+string Estudiante::getPromedio(){
     return *promedio;
 }
 

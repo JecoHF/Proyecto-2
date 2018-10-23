@@ -44,3 +44,48 @@
 1539840561 c:\users\jefferson\documents\github\proyecto-2\proyecto#2\proyecto\include\interfaz.h
 	"ListaEstudiante.h"
 
+1540323781 source:c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\main.cpp
+	"Interfaz.h"
+
+1540323781 c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\include\interfaz.h
+	"ListaEstudiante.h"
+
+1540328485 c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\include\listaestudiante.h
+	"NodoEstudiante.h"
+
+1540323781 c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\include\nodoestudiante.h
+	"Estudiante.h"
+
+1540327287 c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\include\estudiante.h
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1540323781 source:c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\src\autor.cpp
+	"Autor.h"
+
+1540323781 c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\include\autor.h
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1540327287 source:c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\src\estudiante.cpp
+	"Estudiante.h"
+
+1540327363 source:c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\src\interfaz.cpp
+	"Interfaz.h"
+
+1540323781 source:c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\src\libro.cpp
+	"Libro.h"
+
+1540323781 c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\include\libro.h
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1540323781 source:c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\src\nodoestudiante.cpp
+	"NodoEstudiante.h"
+
+1540327290 source:c:\users\toshiba\documents\github\proyecto-2\proyecto#2\proyecto\src\listaestudiante.cpp
+	"ListaEstudiante.h"
+
