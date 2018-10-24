@@ -65,6 +65,8 @@ string Estudiante::getPromedio(){
 string Estudiante::toStringEst(){
     stringstream l;
 
+    l<<endl;
+    l<<"----------------------"<<endl;
     l<<"Datos del estudiante: "<<endl;
     l<<"Id: "<<*IdEst<<endl;
     l<<"Nombre: "<<*nombre<<endl;
@@ -73,6 +75,7 @@ string Estudiante::toStringEst(){
     l<<"Email: "<<*email<<endl;
     l<<"Carrera: "<<*carrera<<endl;
     l<<"Promedio ponderado: "<<*promedio<<endl;
+    l<<"----------------------"<<endl;
 
     return l.str();
 }

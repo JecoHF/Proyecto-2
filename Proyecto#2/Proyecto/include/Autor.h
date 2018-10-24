@@ -10,22 +10,23 @@ class Autor
 {
     public:
         Autor();
+        Autor(string *, string *, string *, string *);
 
-        //Métodos set:
+        //Metodos set:
 
         void setIdAutor(string *IdAutor);
-        void setNombreA(string *NombreA);
-        void setEspecialidad(string *Especialidad);
+        void setNombreAutor(string *NombreAutor);
+        void setAreaEsp(string *AreaEsp);
         void setCantPub(string *CantPub);
 
-        //Métodos get:
+        //Metodos get:
 
         string getIdAutor();
-        string getNombreA();
-        string getEspecialidad();
+        string getNombreAutor();
+        string getAreaEsp();
         string getCantPub();
 
-        //Métodos adicionales:
+        //Metodos Adicionales:
 
         string toStringAutor();
 
@@ -35,8 +36,8 @@ class Autor
 
     private:
         string *IdAutor;
-        string *NombreA;
-        string *Especialidad;
+        string *NombreAutor;
+        string *AreaEsp;
         string *CantPub;
 };
 

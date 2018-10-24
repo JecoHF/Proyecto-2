@@ -6,7 +6,7 @@ int main()
 {
     Interfaz *M=new Interfaz;
 
-    M->MenuEstudiante();
+    M->MenuPrincipal();
 
     return 0;
 }

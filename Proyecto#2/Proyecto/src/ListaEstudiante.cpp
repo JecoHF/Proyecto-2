@@ -6,11 +6,25 @@ ListaEstudiante::ListaEstudiante()
 }
 
 void ListaEstudiante::AgregarEstudiante(Estudiante *Est){
+
+    NodoEstudiante *temp=RaizE;
+    while (temp){
+        string *idr=new string("aa");
+        if(temp->getEst()->getIdEst() == Est->getIdEst()){
+            system("cls");
+            cout<<"Id existente, digite un id diferente"<<endl;
+            cin>>*idr;
+            Est->setIdEst(idr);
+        }
+        temp=temp->getSigE();
+        if(*idr !="aa"){
+            temp=RaizE;
+        }
+    }
     NodoEstudiante *NuevoE=new NodoEstudiante;
     NuevoE->setEst(Est);
     NuevoE->setSigE(NULL);
-
-    NodoEstudiante *temp=RaizE;
+    temp=RaizE;
 
     if(temp){
         while(temp->getSigE()){

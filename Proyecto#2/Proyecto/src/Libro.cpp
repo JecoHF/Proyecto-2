@@ -43,12 +43,14 @@ string Libro::getCantE(){
 string Libro::toStringLibro(){
 
     stringstream k;
-
+    k<<endl;
+    k<<"------------------"<<endl;
     k<<"Datos del Libro: "<<endl;
     k<<"Id: "<<*IdLib<<endl;
     k<<"Descripcion: "<<*Descripcion<<endl;
     k<<"ISBN: "<<*ISBN<<endl;
     k<<"Cantidad de Ejemplares: "<<*CantE<<endl;
+    k<<"------------------"<<endl;
 
     return k.str();
 

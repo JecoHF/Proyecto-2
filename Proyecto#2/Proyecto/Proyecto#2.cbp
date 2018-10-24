@@ -38,15 +38,23 @@
 		<Unit filename="include/Estudiante.h" />
 		<Unit filename="include/Interfaz.h" />
 		<Unit filename="include/Libro.h" />
+		<Unit filename="include/ListaAutor.h" />
 		<Unit filename="include/ListaEstudiante.h" />
+		<Unit filename="include/ListaLibro.h" />
+		<Unit filename="include/NodoAutor.h" />
 		<Unit filename="include/NodoEstudiante.h" />
+		<Unit filename="include/NodoLibro.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Autor.cpp" />
 		<Unit filename="src/Estudiante.cpp" />
 		<Unit filename="src/Interfaz.cpp" />
 		<Unit filename="src/Libro.cpp" />
+		<Unit filename="src/ListaAutor.cpp" />
 		<Unit filename="src/ListaEstudiante.cpp" />
+		<Unit filename="src/ListaLibro.cpp" />
+		<Unit filename="src/NodoAutor.cpp" />
 		<Unit filename="src/NodoEstudiante.cpp" />
+		<Unit filename="src/NodoLibro.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
