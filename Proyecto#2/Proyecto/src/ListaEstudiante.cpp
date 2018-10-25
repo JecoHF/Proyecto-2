@@ -35,6 +35,17 @@ void ListaEstudiante::AgregarEstudiante(Estudiante *Est){
     else {
         RaizE=NuevoE;
     }
+
+    temp=RaizE;
+    ofstream archivo;
+
+    archivo.open("Estudiante.txt",ios::out);
+    while(temp){
+        archivo<<temp->getEst()->toStringEst();
+        temp=temp->getSigE();
+    }
+    archivo.close();
+
 }
 void ListaEstudiante::VerTodosEstudiantes(){
     NodoEstudiante *temp=RaizE;
@@ -191,6 +202,59 @@ void ListaEstudiante::ModificarEstudiante(){
             system("pause");
         }//end if
     }//end if
+}
+void ListaEstudiante::EliminarEstudiante(){
+
+    NodoEstudiante *temp = RaizE;
+    NodoEstudiante *q = NULL;
+    string id="";
+
+
+    if(RaizE == NULL)
+    {
+        cout << "La lista esta vacia, no se puede borrar" << endl;
+        return;
+    }
+
+    cout <<endl;
+    cout <<"Ingrese el id del Estudiante que desea eliminar: ";
+    cin >>id;
+
+    if(RaizE->getEst()->getIdEst() == id)
+    {
+        RaizE = RaizE->getSigE();
+        delete temp;
+        cout << "Estudiante Borrado" << endl;
+        cin.get();
+        return;
+    }
+    q = RaizE;
+    while(q->getSigE()->getSigE() != NULL)
+    {
+
+        if(q->getSigE()->getEst()->getIdEst() == id)
+        {
+            temp = q->getSigE();
+            q->setSigE(temp->getSigE());
+            delete temp;
+            cout<<"Estudiante Borrado"<<endl;
+            cin.get();
+            return;
+        }
+        q = q->getSigE();
+    }
+    if (q->getSigE()->getEst()->getIdEst() == id)
+    {
+        temp = q->getSigE();
+        delete temp;
+        q->setSigE(NULL);
+        cout<<"Estudiante borrado!"<<endl;
+        cin.get();
+        return;
+    }
+    cout<<"El Estudiante "<<id<<" no existe"<<endl;
+    cin.get();
+
 }
 ListaEstudiante::~ListaEstudiante()
 {

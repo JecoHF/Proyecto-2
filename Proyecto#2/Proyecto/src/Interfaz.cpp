@@ -100,8 +100,11 @@ void Interfaz::MenuEstudiante(){
         break;
     }
     case 5:{
-       // ListEst->EliminarEstudiante();
+        system("cls");
+        ListEst->EliminarEstudiante();
+        cin.get();
         break;
+
     }
     case 6:{
         auxE=0;
@@ -196,8 +199,11 @@ void Interfaz::MenuAutor(){
         break;
     }
     case 5:{
-       // ListA->EliminarEstudiante();
+        system("cls");
+        ListA->EliminarAutor();
+        cin.get();
         break;
+
     }
     case 6:{
         auxA=0;
@@ -293,7 +299,9 @@ void Interfaz::MenuLibro(){
         break;
     }
     case 5:{
-       // ListA->EliminarEstudiante();
+        system("cls");
+        ListLi->EliminarLibro();
+        cin.get();
         break;
     }
     case 6:{

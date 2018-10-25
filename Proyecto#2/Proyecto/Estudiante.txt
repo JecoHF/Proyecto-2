@@ -1,0 +1,11 @@
+
+----------------------
+Datos del estudiante: 
+Id: 11
+Nombre: Jefferson
+Edad: 20
+Direccion: Tacares
+Email: unagmail
+Carrera: Ingenieria en Sistemas
+Promedio ponderado: 90
+----------------------

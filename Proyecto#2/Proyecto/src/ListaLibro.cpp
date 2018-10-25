@@ -35,6 +35,16 @@ void ListaLibro::AgregarLibro(Libro *lib){
     else {
         raizLi=NuevoL;
     }
+
+    temp=raizLi;
+    ofstream archivo;
+
+    archivo.open("Libro.txt",ios::out);
+    while(temp){
+        archivo<<temp->getLib()->toStringLibro();
+        temp=temp->getSigLi();
+    }
+    archivo.close();
 }
 void ListaLibro::VerTodosLibros(){
 
@@ -168,6 +178,58 @@ void ListaLibro::ModificarLibro(){
         }//end if
     }//end if
 
+}
+void ListaLibro::EliminarLibro(){
+
+    NodoLibro *temp = raizLi;
+    NodoLibro *q = NULL;
+    string id="";
+
+
+    if(raizLi == NULL)
+    {
+        cout << "La lista esta vacia, no se puede borrar" << endl;
+        return;
+    }
+
+    cout <<endl;
+    cout <<"Ingrese el id del Libro que desea eliminar: ";
+    cin >>id;
+
+    if(raizLi->getLib()->getIdLib() == id)
+    {
+        raizLi = raizLi->getSigLi();
+        delete temp;
+        cout << "Libro Borrado" << endl;
+        cin.get();
+        return;
+    }
+    q = raizLi;
+    while(q->getSigLi()->getSigLi() != NULL)
+    {
+
+        if(q->getSigLi()->getLib()->getIdLib() == id)
+        {
+            temp = q->getSigLi();
+            q->setSigLi(temp->getSigLi());
+            delete temp;
+            cout<<"Libro Borrado"<<endl;
+            cin.get();
+            return;
+        }
+        q = q->getSigLi();
+    }
+    if (q->getSigLi()->getLib()->getIdLib() == id)
+    {
+        temp = q->getSigLi();
+        delete temp;
+        q->setSigLi(NULL);
+        cout<<"Libro borrado!"<<endl;
+        cin.get();
+        return;
+    }
+    cout<<"El libro "<<id<<" no existe"<<endl;
+    cin.get();
 }
 ListaLibro::~ListaLibro()
 {

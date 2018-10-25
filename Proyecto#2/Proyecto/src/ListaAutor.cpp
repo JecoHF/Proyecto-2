@@ -37,6 +37,15 @@ void ListaAutor::AgregarAutor(Autor *Auto){
         raizA=NuevoA;
     }
 
+    temp=raizA;
+    ofstream archivo;
+
+    archivo.open("Autor.txt",ios::out);
+    while(temp){
+        archivo<<temp->getAuto()->toStringAutor();
+        temp=temp->getSigA();
+    }
+    archivo.close();
 }
 void ListaAutor::VerTodosAutores(){
         NodoAutor *temp=raizA;
@@ -170,6 +179,58 @@ void ListaAutor::ModificarAutor(){
             system("pause");
         }//end if
     }//end if
+}
+void ListaAutor::EliminarAutor(){
+
+    NodoAutor *temp = raizA;
+    NodoAutor *q = NULL;
+    string id="";
+
+
+    if(raizA == NULL)
+    {
+        cout << "La lista esta vacia, no se puede borrar" << endl;
+        return;
+    }
+
+    cout <<endl;
+    cout <<"Ingrese el id del Autor que desea eliminar: ";
+    cin >>id;
+
+    if(raizA->getAuto()->getIdAutor() == id)
+    {
+        raizA = raizA->getSigA();
+        delete temp;
+        cout << "Autor Borrado" << endl;
+        cin.get();
+        return;
+    }
+    q = raizA;
+    while(q->getSigA()->getSigA() != NULL)
+    {
+
+        if(q->getSigA()->getAuto()->getIdAutor() == id)
+        {
+            temp = q->getSigA();
+            q->setSigA(temp->getSigA());
+            delete temp;
+            cout<<"Autor Borrado"<<endl;
+            cin.get();
+            return;
+        }
+        q = q->getSigA();
+    }
+    if (q->getSigA()->getAuto()->getIdAutor() == id)
+    {
+        temp = q->getSigA();
+        delete temp;
+        q->setSigA(NULL);
+        cout<<"Autor borrado!"<<endl;
+        cin.get();
+        return;
+    }
+    cout<<"El Autor "<<id<<" no existe"<<endl;
+    cin.get();
 }
 ListaAutor::~ListaAutor()
 {
