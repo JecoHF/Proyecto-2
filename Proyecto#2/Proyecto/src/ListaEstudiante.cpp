@@ -36,16 +36,6 @@ void ListaEstudiante::AgregarEstudiante(Estudiante *Est){
         RaizE=NuevoE;
     }
 
-    temp=RaizE;
-    ofstream archivo;
-
-    archivo.open("Estudiante.txt",ios::out);
-    while(temp){
-        archivo<<temp->getEst()->toStringEst();
-        temp=temp->getSigE();
-    }
-    archivo.close();
-
 }
 void ListaEstudiante::VerTodosEstudiantes(){
     NodoEstudiante *temp=RaizE;
@@ -142,7 +132,8 @@ void ListaEstudiante::ModificarEstudiante(){
                         case 2:{
                             cout <<endl;
                             cout <<"Digite el nuevo Nombre: ";
-                            cin >>*nombre1;
+                            cin.ignore();
+                            getline(cin,*nombre1);
                             temp->getEst()->setNombre(nombre1);
                         break;
                         }
@@ -156,7 +147,8 @@ void ListaEstudiante::ModificarEstudiante(){
                         case 4:{
                             cout <<endl;
                             cout<<"Digite la nueva direccion ";
-                            cin >>*direccion1;
+                            cin.ignore();
+                            getline(cin,*direccion1);
                             temp->getEst()->setDireccion(direccion1);
                         break;
                         }
@@ -170,7 +162,8 @@ void ListaEstudiante::ModificarEstudiante(){
                         case 6:{
                             cout <<endl;
                             cout<<"Digite la nueva carrera ";
-                            cin >>*carrera1;
+                            cin.ignore();
+                            getline(cin,*carrera1);
                             temp->getEst()->setCarrera(carrera1);
                         break;
                         }
@@ -255,6 +248,17 @@ void ListaEstudiante::EliminarEstudiante(){
     cout<<"El Estudiante "<<id<<" no existe"<<endl;
     cin.get();
 
+}
+void ListaEstudiante::ArchivoEstudiante(){
+    NodoEstudiante *temp=RaizE;
+    ofstream archivo;
+
+    archivo.open("Estudiante.txt",ios::out);
+    while(temp){
+        archivo<<temp->getEst()->toStringEst();
+        temp=temp->getSigE();
+    }
+    archivo.close();
 }
 ListaEstudiante::~ListaEstudiante()
 {

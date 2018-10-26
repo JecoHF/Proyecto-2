@@ -11,6 +11,7 @@ class ListaEstudiante
         void EliminarEstudiante();
         void VerEstudiante();
         void VerTodosEstudiantes();
+        void ArchivoEstudiante();
         virtual ~ListaEstudiante();
 
     protected:

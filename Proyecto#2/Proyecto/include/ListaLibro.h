@@ -11,6 +11,7 @@ class ListaLibro
         void EliminarLibro();
         void VerLibro();
         void VerTodosLibros();
+        void ArchivoLibro();
         virtual ~ListaLibro();
 
     protected:

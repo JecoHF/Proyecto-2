@@ -11,6 +11,7 @@ class ListaAutor
         void EliminarAutor();
         void VerAutor();
         void VerTodosAutores();
+        void ArchivoAutor();
         virtual ~ListaAutor();
 
     protected:

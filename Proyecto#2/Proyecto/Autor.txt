@@ -1,8 +1,8 @@
 
 ----------------------
 Datos del autor:
-Id: 12
-Nombre: Fran
-Area de Especialidad: iencias de la Salud
-Cantidad de Publicaciones: 10
+Id: 13
+Nombre: Jose
+Area de Especialidad: alud
+Cantidad de Publicaciones: 3
 ----------------------

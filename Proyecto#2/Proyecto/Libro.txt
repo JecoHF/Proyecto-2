@@ -2,7 +2,7 @@
 ------------------
 Datos del Libro: 
 Id: 13
-Descripcion: Aventuras fant sticas
-ISBN: 60H
-Cantidad de Ejemplares: 20
+Descripcion: ola
+ISBN: 98t
+Cantidad de Ejemplares: 3
 ------------------

@@ -37,15 +37,6 @@ void ListaAutor::AgregarAutor(Autor *Auto){
         raizA=NuevoA;
     }
 
-    temp=raizA;
-    ofstream archivo;
-
-    archivo.open("Autor.txt",ios::out);
-    while(temp){
-        archivo<<temp->getAuto()->toStringAutor();
-        temp=temp->getSigA();
-    }
-    archivo.close();
 }
 void ListaAutor::VerTodosAutores(){
         NodoAutor *temp=raizA;
@@ -140,14 +131,16 @@ void ListaAutor::ModificarAutor(){
                         case 2:{
                             cout <<endl;
                             cout <<"Digite el nuevo Nombre: ";
-                            cin >>*nombre1;
+                            cin.ignore();
+                            getline(cin,*nombre1);
                             temp->getAuto()->setNombreAutor(nombre1);
                         break;
                         }
                         case 3:{
                             cout <<endl;
                             cout <<"Digite la nueva Area de Especialidad: ";
-                            cin >>*Area;
+                            getline(cin,*Area);
+                            cin.ignore();
                             temp->getAuto()->setAreaEsp(Area);
                         break;
                         }
@@ -231,6 +224,17 @@ void ListaAutor::EliminarAutor(){
     }
     cout<<"El Autor "<<id<<" no existe"<<endl;
     cin.get();
+}
+void ListaAutor::ArchivoAutor(){
+    NodoAutor *temp=raizA;
+    ofstream archivo;
+
+    archivo.open("Autor.txt",ios::out);
+    while(temp){
+        archivo<<temp->getAuto()->toStringAutor();
+        temp=temp->getSigA();
+    }
+    archivo.close();
 }
 ListaAutor::~ListaAutor()
 {

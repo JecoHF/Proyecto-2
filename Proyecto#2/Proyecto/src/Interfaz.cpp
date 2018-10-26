@@ -78,6 +78,7 @@ void Interfaz::MenuEstudiante(){
     cout<<"1.Si 2.No ";
     cin>>ope;
     }
+    ListEst->ArchivoEstudiante();
     break;
     }
 
@@ -96,12 +97,14 @@ void Interfaz::MenuEstudiante(){
     case 4:{
         system("cls");
         ListEst->ModificarEstudiante();
+        ListEst->ArchivoEstudiante();
         cin.get();
         break;
     }
     case 5:{
         system("cls");
         ListEst->EliminarEstudiante();
+        ListEst->ArchivoEstudiante();
         cin.get();
         break;
 
@@ -177,6 +180,7 @@ void Interfaz::MenuAutor(){
     cout<<"1.Si 2.No ";
     cin>>ope;
     }
+    ListA->ArchivoAutor();
     break;
     }
 
@@ -195,12 +199,14 @@ void Interfaz::MenuAutor(){
     case 4:{
         system("cls");
         ListA->ModificarAutor();
+        ListA->ArchivoAutor();
         cin.get();
         break;
     }
     case 5:{
         system("cls");
         ListA->EliminarAutor();
+        ListA->ArchivoAutor();
         cin.get();
         break;
 
@@ -277,6 +283,7 @@ void Interfaz::MenuLibro(){
     cout<<"1.Si 2.No ";
     cin>>ope;
     }
+    ListLi->ArchivoLibro();
     break;
     }
 
@@ -295,12 +302,14 @@ void Interfaz::MenuLibro(){
     case 4:{
         system("cls");
         ListLi->ModificarLibro();
+        ListLi->ArchivoLibro();
         cin.get();
         break;
     }
     case 5:{
         system("cls");
         ListLi->EliminarLibro();
+        ListLi->ArchivoLibro();
         cin.get();
         break;
     }

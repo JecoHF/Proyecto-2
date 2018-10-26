@@ -36,15 +36,6 @@ void ListaLibro::AgregarLibro(Libro *lib){
         raizLi=NuevoL;
     }
 
-    temp=raizLi;
-    ofstream archivo;
-
-    archivo.open("Libro.txt",ios::out);
-    while(temp){
-        archivo<<temp->getLib()->toStringLibro();
-        temp=temp->getSigLi();
-    }
-    archivo.close();
 }
 void ListaLibro::VerTodosLibros(){
 
@@ -138,7 +129,8 @@ void ListaLibro::ModificarLibro(){
                         case 2:{
                             cout <<endl;
                             cout <<"Digite la nueva descripcion: ";
-                            cin >>*desc;
+                            cin.ignore();
+                            getline(cin,*desc);
                             temp->getLib()->setDescripcion(desc);
                         break;
                         }
@@ -230,6 +222,17 @@ void ListaLibro::EliminarLibro(){
     }
     cout<<"El libro "<<id<<" no existe"<<endl;
     cin.get();
+}
+void ListaLibro::ArchivoLibro(){
+    NodoLibro *temp=raizLi;
+    ofstream archivo;
+
+    archivo.open("Libro.txt",ios::out);
+    while(temp){
+        archivo<<temp->getLib()->toStringLibro();
+        temp=temp->getSigLi();
+    }
+    archivo.close();
 }
 ListaLibro::~ListaLibro()
 {
