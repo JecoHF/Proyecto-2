@@ -88,7 +88,7 @@ void ListaLibro::VerLibro(){
     }
 
 }
-void ListaLibro::ModificarLibro(){
+void ListaLibro::ModificarLibro(){  //Recuperado de: https://www.youtube.com/watch?v=sYO52cVS2OU
   NodoLibro *temp = raizLi;
     int opcion;
     bool encontrado = false;
@@ -180,13 +180,22 @@ void ListaLibro::EliminarLibro(){
 
     if(raizLi == NULL)
     {
+        cout <<endl;
         cout << "La lista esta vacia, no se puede borrar" << endl;
+        cin.get();
         return;
     }
 
     cout <<endl;
     cout <<"Ingrese el id del Libro que desea eliminar: ";
     cin >>id;
+
+    if(raizLi->getSigLi()== NULL && raizLi->getLib()->getIdLib() != id){
+        cout <<endl;
+        cout <<"El Id del Libro ingresado no se encuentra en la lista" << endl;
+        cin.get();
+        return;
+    }
 
     if(raizLi->getLib()->getIdLib() == id)
     {

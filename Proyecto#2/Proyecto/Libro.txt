@@ -1,8 +1,8 @@
 
 ------------------
 Datos del Libro: 
-Id: 13
-Descripcion: ola
-ISBN: 98t
-Cantidad de Ejemplares: 3
+Id: 1
+Descripcion: Terror
+ISBN: 333
+Cantidad de Ejemplares: 80
 ------------------

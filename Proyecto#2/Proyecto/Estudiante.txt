@@ -1,11 +1,11 @@
 
 ----------------------
 Datos del estudiante: 
-Id: 11
-Nombre: Juan Jose
-Edad: 21
-Direccion: Tacares
-Email: una
-Carrera: Sistemas
-Promedio ponderado: 90
+Id: User2
+Nombre: Juan
+Edad: 30
+Direccion: Alajuela
+Email: juan@gmail.com
+Carrera: Diseno
+Promedio ponderado: 98
 ----------------------

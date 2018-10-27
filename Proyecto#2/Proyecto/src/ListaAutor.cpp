@@ -90,7 +90,7 @@ void ListaAutor::VerAutor(){
     }
 }
 
-void ListaAutor::ModificarAutor(){
+void ListaAutor::ModificarAutor(){  //Recuperado de: https://www.youtube.com/watch?v=sYO52cVS2OU
      NodoAutor *temp = raizA;
     int opcion;
     bool encontrado = false;
@@ -182,13 +182,22 @@ void ListaAutor::EliminarAutor(){
 
     if(raizA == NULL)
     {
+        cout <<endl;
         cout << "La lista esta vacia, no se puede borrar" << endl;
+        cin.get();
         return;
     }
 
     cout <<endl;
     cout <<"Ingrese el id del Autor que desea eliminar: ";
     cin >>id;
+
+    if(raizA->getSigA()== NULL && raizA->getAuto()->getIdAutor() != id){
+        cout <<endl;
+        cout <<"El Id del Autor ingresado no se encuentra en la lista" << endl;
+        cin.get();
+        return;
+    }
 
     if(raizA->getAuto()->getIdAutor() == id)
     {

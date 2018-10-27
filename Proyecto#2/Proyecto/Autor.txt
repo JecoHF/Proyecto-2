@@ -1,8 +1,0 @@
-
-----------------------
-Datos del autor:
-Id: 13
-Nombre: Jose
-Area de Especialidad: alud
-Cantidad de Publicaciones: 3
-----------------------

@@ -114,8 +114,8 @@ void Interfaz::MenuEstudiante(){
         break;
     }
     default:{
-        cout<<"Opcion inexistente, por favor intentelo de nuevo";
-        cin.get();
+        cout<<"Opcion inexistente, por favor intentelo de nuevo" <<endl <<endl;
+        system("pause");
         break;
     }
     }
@@ -216,8 +216,8 @@ void Interfaz::MenuAutor(){
         break;
     }
     default:{
-        cout<<"Opcion inexistente, por favor intentelo de nuevo";
-        cin.get();
+        cout<<"Opcion inexistente, por favor intentelo de nuevo" <<endl <<endl;
+        system("pause");
         break;
     }
     }
@@ -318,8 +318,8 @@ void Interfaz::MenuLibro(){
         break;
     }
     default:{
-        cout<<"Opcion inexistente, por favor intentelo de nuevo";
-        cin.get();
+        cout<<"Opcion inexistente, por favor intentelo de nuevo" <<endl <<endl;
+        system("pause");
         break;
     }
     }
@@ -337,7 +337,7 @@ void Interfaz::MenuPrincipal(){
        int opmp;
     cout<<endl<<endl;
     cout<<"        Bienvenido al sistema IMEC"<<endl;
-    cout<<"Digite el menu que desea usar: "<<endl;
+    cout<<"  Digite el menu que desea usar: "<<endl;
     cout<<"1. Estudiante"<<endl;
     cout<<"2. Autor"<<endl;
     cout<<"3. Libro"<<endl;
@@ -360,7 +360,7 @@ void Interfaz::MenuPrincipal(){
         case 4:{
             system("cls");
             cout<<endl<<endl;
-            cout<<"               Gracias por haber usado nuestro sistema";
+            cout<<"               Gracias por haber usado nuestro sistema" <<endl;
             cin.get();
             sal=0;
             break;
@@ -368,8 +368,8 @@ void Interfaz::MenuPrincipal(){
         default:{
             system("cls");
             cout<<endl<<endl;
-            cout<<"Opcion inexistente, por favor vuelva a intentarlo";
-            cin.get();
+            cout<<"Opcion inexistente, por favor vuelva a intentarlo" <<endl <<endl;
+            system("pause");
             break;
         }//fin default
     }//Fin switch

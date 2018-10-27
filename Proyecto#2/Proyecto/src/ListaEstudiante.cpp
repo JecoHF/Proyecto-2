@@ -86,7 +86,7 @@ void ListaEstudiante::VerEstudiante(){
         }
     }
 }
-void ListaEstudiante::ModificarEstudiante(){
+void ListaEstudiante::ModificarEstudiante(){  //Recuperado de: https://www.youtube.com/watch?v=sYO52cVS2OU
     NodoEstudiante *temp = RaizE;
     int opcion;
     bool encontrado = false;
@@ -205,13 +205,22 @@ void ListaEstudiante::EliminarEstudiante(){
 
     if(RaizE == NULL)
     {
+        cout <<endl;
         cout << "La lista esta vacia, no se puede borrar" << endl;
+        cin.get();
         return;
     }
 
     cout <<endl;
     cout <<"Ingrese el id del Estudiante que desea eliminar: ";
     cin >>id;
+
+    if(RaizE->getSigE()== NULL && RaizE->getEst()->getIdEst() != id){
+        cout <<endl;
+        cout <<"El Id del Estudiante ingresado no se encuentra en la lista" << endl;
+        cin.get();
+        return;
+    }
 
     if(RaizE->getEst()->getIdEst() == id)
     {
