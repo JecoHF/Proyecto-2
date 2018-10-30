@@ -1,11 +1,33 @@
 
 ----------------------
 Datos del estudiante: 
-Id: User2
-Nombre: Juan
-Edad: 30
-Direccion: Alajuela
-Email: juan@gmail.com
-Carrera: Diseno
-Promedio ponderado: 98
+Id: 15
+Nombre: Jeco
+Edad: 20
+Direccion: s
+Email: s
+Carrera: s
+Promedio ponderado: s
+----------------------
+
+----------------------
+Datos del estudiante: 
+Id: 13
+Nombre: Sharon
+Edad: 19
+Direccion: e
+Email: e
+Carrera: e
+Promedio ponderado: e
+----------------------
+
+----------------------
+Datos del estudiante: 
+Id: 14
+Nombre: Paula
+Edad: 19
+Direccion: g
+Email: g
+Carrera: g
+Promedio ponderado: g
 ----------------------

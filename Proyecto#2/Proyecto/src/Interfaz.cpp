@@ -158,7 +158,6 @@ void Interfaz::MenuAutor(){
     getline(cin,*NoEn);
     cout<<endl;
     cout<<"Digite el area de especialidad: ";
-    cin.ignore();
     getline(cin,*AEEn);
     cout<<endl;
     cout<<"Digite la cantidad de publicaciones realizadas: ";

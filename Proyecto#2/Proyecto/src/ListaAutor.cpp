@@ -121,10 +121,27 @@ void ListaAutor::ModificarAutor(){  //Recuperado de: https://www.youtube.com/wat
                 cin >>opcion;
                     switch(opcion){
                         case 1:{
+                            NodoAutor *temp2=raizA;
                             string *id1 = new string;
+                            string aux="a";
                             cout <<endl;
                             cout <<"Digite el nuevo ID: ";
                             cin >>*id1;
+                            while(temp2){
+                                if(temp2->getAuto()->getIdAutor() == *id1){
+                                    system("cls");
+                                    cout<<"Id existente, por favor digite uno diferente ";
+                                    cin>>*id1;
+                                    aux="b";
+                                }
+
+                                temp2=temp2->getSigA();
+
+                                if(aux != "a"){
+                                    temp2=raizA;
+                                    aux="a";
+                                }
+                            }
                             temp->getAuto()->setIdAutor(id1);
                         break;
                         }

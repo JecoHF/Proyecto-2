@@ -1,8 +1,16 @@
 
 ------------------
 Datos del Libro: 
-Id: 1
-Descripcion: Terror
-ISBN: 333
-Cantidad de Ejemplares: 80
+Id: 14
+Descripcion: d
+ISBN: d
+Cantidad de Ejemplares: d
+------------------
+
+------------------
+Datos del Libro: 
+Id: 13
+Descripcion: f
+ISBN: f
+Cantidad de Ejemplares: f
 ------------------

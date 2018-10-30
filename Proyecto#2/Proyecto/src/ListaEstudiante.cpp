@@ -122,10 +122,27 @@ void ListaEstudiante::ModificarEstudiante(){  //Recuperado de: https://www.youtu
                 cin >>opcion;
                     switch(opcion){
                         case 1:{
+                            NodoEstudiante *temp2=RaizE;
                             string *id1 = new string;
+                            string aux="a";
                             cout <<endl;
                             cout <<"Digite el nuevo ID: ";
                             cin >>*id1;
+                            while(temp2){
+                                if(temp2->getEst()->getIdEst() == *id1){
+                                    system("cls");
+                                    cout<<"Id existente, por favor digite uno diferente ";
+                                    cin>>*id1;
+                                    aux="b";
+                                }
+
+                                temp2=temp2->getSigE();
+
+                                if(aux != "a"){
+                                    temp2=RaizE;
+                                    aux="a";
+                                }
+                            }
                             temp->getEst()->setIdEst(id1);
                         break;
                         }

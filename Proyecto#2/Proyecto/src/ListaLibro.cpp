@@ -119,10 +119,27 @@ void ListaLibro::ModificarLibro(){  //Recuperado de: https://www.youtube.com/wat
                 cin >>opcion;
                     switch(opcion){
                         case 1:{
+                            NodoLibro *temp2=raizLi;
                             string *id1 = new string;
+                            string aux="a";
                             cout <<endl;
                             cout <<"Digite el nuevo ID: ";
                             cin >>*id1;
+                            while(temp2){
+                                if(temp2->getLib()->getIdLib() == *id1){
+                                    system("cls");
+                                    cout<<"Id existente, por favor digite uno diferente ";
+                                    cin>>*id1;
+                                    aux="b";
+                                }
+
+                                temp2=temp2->getSigLi();
+
+                                if(aux != "a"){
+                                    temp2=raizLi;
+                                    aux="a";
+                                }
+                            }
                             temp->getLib()->setIdLib(id1);
                         break;
                         }
