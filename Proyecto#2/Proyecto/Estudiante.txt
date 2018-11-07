@@ -1,33 +1,22 @@
 
 ----------------------
 Datos del estudiante: 
-Id: 15
-Nombre: Jeco
+Id: 12
+Nombre: Jefferson
 Edad: 20
-Direccion: s
-Email: s
-Carrera: s
-Promedio ponderado: s
+Direccion: Tacreas de Grecia
+Email: unamail
+Carrera: Ingenieria en Sistemas
+Promedio ponderado: 95
 ----------------------
 
 ----------------------
 Datos del estudiante: 
 Id: 13
-Nombre: Sharon
+Nombre: Sharon Chavarria 
 Edad: 19
-Direccion: e
-Email: e
-Carrera: e
-Promedio ponderado: e
-----------------------
-
-----------------------
-Datos del estudiante: 
-Id: 14
-Nombre: Paula
-Edad: 19
-Direccion: g
-Email: g
-Carrera: g
-Promedio ponderado: g
+Direccion: Turrucares de Alajuela
+Email: unamail
+Carrera: Sistemas
+Promedio ponderado: 98
 ----------------------

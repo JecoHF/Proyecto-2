@@ -7,7 +7,7 @@ Interfaz::Interfaz()
     ListLi=new ListaLibro;
 }
 void Interfaz::MenuEstudiante(){
-    int opME;
+    char opME;
     bool auxE=1;
 
     while(auxE==1){
@@ -22,7 +22,7 @@ void Interfaz::MenuEstudiante(){
     cout<<"6. Volver al menu principal"<<endl <<endl;
     cin>>opME;
     switch(opME){
-    case 1:{
+    case '1':{
     int ope=1;
     while(ope==1){
     Estudiante *Estudi=new Estudiante;
@@ -82,26 +82,26 @@ void Interfaz::MenuEstudiante(){
     break;
     }
 
-    case 2:{
+    case '2':{
         system("cls");
         ListEst->VerTodosEstudiantes();
         cin.get();
         break;
     }
-    case 3:{
+    case '3':{
         system("cls");
         ListEst->VerEstudiante();
         cin.get();
         break;
     }
-    case 4:{
+    case '4':{
         system("cls");
         ListEst->ModificarEstudiante();
         ListEst->ArchivoEstudiante();
         cin.get();
         break;
     }
-    case 5:{
+    case '5':{
         system("cls");
         ListEst->EliminarEstudiante();
         ListEst->ArchivoEstudiante();
@@ -109,7 +109,7 @@ void Interfaz::MenuEstudiante(){
         break;
 
     }
-    case 6:{
+    case '6':{
         auxE=0;
         break;
     }
@@ -122,7 +122,7 @@ void Interfaz::MenuEstudiante(){
     }
 }
 void Interfaz::MenuAutor(){
-    int opMA;
+    char opMA;
     bool auxA=1;
 
     while(auxA==1){
@@ -137,7 +137,7 @@ void Interfaz::MenuAutor(){
     cout<<"6. Volver al menu principal"<<endl <<endl;
     cin>>opMA;
     switch(opMA){
-    case 1:{
+    case '1':{
     int ope=1;
     while(ope==1){
     Autor *Aut=new Autor;
@@ -183,26 +183,26 @@ void Interfaz::MenuAutor(){
     break;
     }
 
-    case 2:{
+    case '2':{
         system("cls");
         ListA->VerTodosAutores();
         cin.get();
         break;
     }
-    case 3:{
+    case '3':{
         system("cls");
         ListA->VerAutor();
         cin.get();
         break;
     }
-    case 4:{
+    case '4':{
         system("cls");
         ListA->ModificarAutor();
         ListA->ArchivoAutor();
         cin.get();
         break;
     }
-    case 5:{
+    case '5':{
         system("cls");
         ListA->EliminarAutor();
         ListA->ArchivoAutor();
@@ -210,7 +210,7 @@ void Interfaz::MenuAutor(){
         break;
 
     }
-    case 6:{
+    case '6':{
         auxA=0;
         break;
     }
@@ -224,7 +224,7 @@ void Interfaz::MenuAutor(){
 
 }
 void Interfaz::MenuLibro(){
-    int opML;
+    char opML;
     bool auxA=1;
 
     while(auxA==1){
@@ -239,7 +239,7 @@ void Interfaz::MenuLibro(){
     cout<<"6. Volver al menu principal"<<endl <<endl;
     cin>>opML;
     switch(opML){
-    case 1:{
+    case '1':{
     int ope=1;
     while(ope==1){
     Libro *Libr=new Libro;
@@ -286,33 +286,33 @@ void Interfaz::MenuLibro(){
     break;
     }
 
-    case 2:{
+    case '2':{
         system("cls");
         ListLi->VerTodosLibros();
         cin.get();
         break;
     }
-    case 3:{
+    case '3':{
         system("cls");
         ListLi->VerLibro();
         cin.get();
         break;
     }
-    case 4:{
+    case '4':{
         system("cls");
         ListLi->ModificarLibro();
         ListLi->ArchivoLibro();
         cin.get();
         break;
     }
-    case 5:{
+    case '5':{
         system("cls");
         ListLi->EliminarLibro();
         ListLi->ArchivoLibro();
         cin.get();
         break;
     }
-    case 6:{
+    case '6':{
         auxA=0;
         break;
     }
@@ -333,7 +333,7 @@ void Interfaz::MenuPrincipal(){
 
     while (sal==1){
        system("cls");
-       int opmp;
+       char opmp;
     cout<<endl<<endl;
     cout<<"        Bienvenido al sistema IMEC"<<endl;
     cout<<"  Digite el menu que desea usar: "<<endl;
@@ -344,19 +344,19 @@ void Interfaz::MenuPrincipal(){
     cin>>opmp;
 
     switch(opmp){
-        case 1:{
+        case '1':{
             MenuEstudiante();
             break;
         }//fin case 1
-        case 2:{
+        case '2':{
             MenuAutor();
             break;
         }//fin case 2
-        case 3:{
+        case '3':{
             MenuLibro();
             break;
         }//fin case 4
-        case 4:{
+        case '4':{
             system("cls");
             cout<<endl<<endl;
             cout<<"               Gracias por haber usado nuestro sistema" <<endl;

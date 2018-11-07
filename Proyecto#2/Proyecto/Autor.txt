@@ -1,8 +1,0 @@
-
-----------------------
-Datos del autor:
-Id: 12
-Nombre: Ivan
-Area de Especialidad: Ciencias
-Cantidad de Publicaciones: 13
-----------------------

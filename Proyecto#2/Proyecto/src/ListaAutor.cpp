@@ -92,7 +92,7 @@ void ListaAutor::VerAutor(){
 
 void ListaAutor::ModificarAutor(){  //Recuperado de: https://www.youtube.com/watch?v=sYO52cVS2OU
      NodoAutor *temp = raizA;
-    int opcion;
+    char opcion;
     bool encontrado = false;
     string id;
     string *nombre1 = new string;
@@ -120,7 +120,7 @@ void ListaAutor::ModificarAutor(){  //Recuperado de: https://www.youtube.com/wat
                 cout <<"Escoja la opcion que desea: ";
                 cin >>opcion;
                     switch(opcion){
-                        case 1:{
+                        case '1':{
                             NodoAutor *temp2=raizA;
                             string *id1 = new string;
                             string aux="a";
@@ -145,7 +145,7 @@ void ListaAutor::ModificarAutor(){  //Recuperado de: https://www.youtube.com/wat
                             temp->getAuto()->setIdAutor(id1);
                         break;
                         }
-                        case 2:{
+                        case '2':{
                             cout <<endl;
                             cout <<"Digite el nuevo Nombre: ";
                             cin.ignore();
@@ -153,7 +153,7 @@ void ListaAutor::ModificarAutor(){  //Recuperado de: https://www.youtube.com/wat
                             temp->getAuto()->setNombreAutor(nombre1);
                         break;
                         }
-                        case 3:{
+                        case '3':{
                             cout <<endl;
                             cout <<"Digite la nueva Area de Especialidad: ";
                             getline(cin,*Area);
@@ -161,7 +161,7 @@ void ListaAutor::ModificarAutor(){  //Recuperado de: https://www.youtube.com/wat
                             temp->getAuto()->setAreaEsp(Area);
                         break;
                         }
-                        case 4:{
+                        case '4':{
                             cout <<endl;
                             cout<<"Digite la nueva cantidad de Publicaciones ";
                             cin >>*Can;

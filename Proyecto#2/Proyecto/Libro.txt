@@ -1,16 +1,8 @@
 
 ------------------
 Datos del Libro: 
-Id: 14
-Descripcion: d
-ISBN: d
-Cantidad de Ejemplares: d
-------------------
-
-------------------
-Datos del Libro: 
-Id: 13
-Descripcion: f
-ISBN: f
-Cantidad de Ejemplares: f
+Id: 16
+Descripcion: Animales Fantasticos
+ISBN: 15
+Cantidad de Ejemplares: 5
 ------------------

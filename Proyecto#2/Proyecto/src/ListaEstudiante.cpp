@@ -88,7 +88,7 @@ void ListaEstudiante::VerEstudiante(){
 }
 void ListaEstudiante::ModificarEstudiante(){  //Recuperado de: https://www.youtube.com/watch?v=sYO52cVS2OU
     NodoEstudiante *temp = RaizE;
-    int opcion;
+    char opcion;
     bool encontrado = false;
     string id;
     string *edad1 = new string;
@@ -121,7 +121,7 @@ void ListaEstudiante::ModificarEstudiante(){  //Recuperado de: https://www.youtu
                 cout <<"Escoja la opcion que desea: ";
                 cin >>opcion;
                     switch(opcion){
-                        case 1:{
+                        case '1':{
                             NodoEstudiante *temp2=RaizE;
                             string *id1 = new string;
                             string aux="a";
@@ -146,7 +146,7 @@ void ListaEstudiante::ModificarEstudiante(){  //Recuperado de: https://www.youtu
                             temp->getEst()->setIdEst(id1);
                         break;
                         }
-                        case 2:{
+                        case '2':{
                             cout <<endl;
                             cout <<"Digite el nuevo Nombre: ";
                             cin.ignore();
@@ -154,14 +154,14 @@ void ListaEstudiante::ModificarEstudiante(){  //Recuperado de: https://www.youtu
                             temp->getEst()->setNombre(nombre1);
                         break;
                         }
-                        case 3:{
+                        case '3':{
                             cout <<endl;
                             cout <<"Digite la nueva Edad: ";
                             cin >>*edad1;
                             temp->getEst()->setEdad(edad1);
                         break;
                         }
-                        case 4:{
+                        case '4':{
                             cout <<endl;
                             cout<<"Digite la nueva direccion ";
                             cin.ignore();
@@ -169,14 +169,14 @@ void ListaEstudiante::ModificarEstudiante(){  //Recuperado de: https://www.youtu
                             temp->getEst()->setDireccion(direccion1);
                         break;
                         }
-                        case 5:{
+                        case '5':{
                             cout <<endl;
                             cout<<"Digite el nuevo email ";
                             cin >>*email1;
                             temp->getEst()->setEmail(email1);
                         break;
                         }
-                        case 6:{
+                        case '6':{
                             cout <<endl;
                             cout<<"Digite la nueva carrera ";
                             cin.ignore();
@@ -184,7 +184,7 @@ void ListaEstudiante::ModificarEstudiante(){  //Recuperado de: https://www.youtu
                             temp->getEst()->setCarrera(carrera1);
                         break;
                         }
-                        case 7:{
+                        case '7':{
                             cout <<endl;
                             cout<<"Digite el nevo promedio ";
                             cin >>*promedio1;

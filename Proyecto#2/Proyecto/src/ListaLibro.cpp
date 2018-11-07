@@ -90,7 +90,7 @@ void ListaLibro::VerLibro(){
 }
 void ListaLibro::ModificarLibro(){  //Recuperado de: https://www.youtube.com/watch?v=sYO52cVS2OU
   NodoLibro *temp = raizLi;
-    int opcion;
+    char opcion;
     bool encontrado = false;
     string id;
     string *desc = new string;
@@ -118,7 +118,7 @@ void ListaLibro::ModificarLibro(){  //Recuperado de: https://www.youtube.com/wat
                 cout <<"Escoja la opcion que desea: ";
                 cin >>opcion;
                     switch(opcion){
-                        case 1:{
+                        case '1':{
                             NodoLibro *temp2=raizLi;
                             string *id1 = new string;
                             string aux="a";
@@ -143,7 +143,7 @@ void ListaLibro::ModificarLibro(){  //Recuperado de: https://www.youtube.com/wat
                             temp->getLib()->setIdLib(id1);
                         break;
                         }
-                        case 2:{
+                        case '2':{
                             cout <<endl;
                             cout <<"Digite la nueva descripcion: ";
                             cin.ignore();
@@ -151,14 +151,14 @@ void ListaLibro::ModificarLibro(){  //Recuperado de: https://www.youtube.com/wat
                             temp->getLib()->setDescripcion(desc);
                         break;
                         }
-                        case 3:{
+                        case '3':{
                             cout <<endl;
                             cout <<"Digite el nuevo ISBN: ";
                             cin >>*IS;
                             temp->getLib()->setISBN(IS);
                         break;
                         }
-                        case 4:{
+                        case '4':{
                             cout <<endl;
                             cout<<"Digite la nueva cantidad de ejemplares ";
                             cin >>*Can;
